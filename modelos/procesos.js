@@ -31,7 +31,7 @@ export function guardarInformacionT(imagen, nombre, alt){
     ide++
     localStorage.setItem('id', JSON.stringify(ide))
     localStorage.setItem('juegos', JSON.stringify(JUEGOS_GUARDAR))
-    return alert(`Se guardo correctamente ${ide}`);
+    return alert(`Se agrego al carrito correctamente`);
 }
 
 export function setTarjetasCarr(){
@@ -43,7 +43,7 @@ export function eliminarTarjeta(index){
     ide--
     localStorage.setItem('id', JSON.stringify(ide))
     localStorage.setItem('juegos', JSON.stringify(JUEGOS_GUARDAR))
-    return alert(index)
+    return alert('Se elimino correctamente')
 }
 
 export function informacionJson(){
