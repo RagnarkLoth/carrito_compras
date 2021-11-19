@@ -1,0 +1,99 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1rem 1rem 1re;
+    background: black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/span 2;
+}
+
+.parteUno{
+    background: #1B1717;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    padding-left: 1em;
+}
+
+.parteDosTit{
+    color: #970000;
+}
+
+.parteDos{
+    background: #670000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+
+main{
+    margin: 2em;
+    background:#141414;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column: 2;
+    box-shadow:  5px 5px #1B1717;
+    border-radius:10px;
+    flex-wrap: wrap;
+}
+
+.carrito{
+    width: 2.2em;
+    margin: 0.2em;
+}
+
+.tarjeta{
+    background: #1B1717;
+    color: white;
+    width: 15em;
+    height: 18em;
+    margin: 2em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border: #171A21 solid 4px;
+    border-radius:10px;
+    box-shadow:  5px 5px #670000;
+}
+
+.imagen{
+    margin: 0.5em;
+    width: 10em;
+    height: 10em;
+}
+
+footer{
+    background: #171A21;
+    height: 5em;
+    grid-column: 1/span 2;
+}
+
+.btnAñadir{
+    background: #670000;
+    width: 10em;
+    height: 2em;
+    border: 1px solid #171A21;
+    border-radius:5px;
+    color: white;
+    margin-top: 5px;
+    box-shadow:  5px 5px #171A21;
+}
+
+footer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
