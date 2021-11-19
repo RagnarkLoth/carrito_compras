@@ -2,7 +2,11 @@ const JUEGOS_GUARDAR=[]
 let ide = 0
 ide = localStorage.getItem('id')
 
-setJuegosGuardar()
+try{
+    setJuegosGuardar()
+}catch(e){
+    console.log("No existen elementos");
+}
 
 export function guardarInformacionT(imagen, nombre, alt){
     if(ide == null){

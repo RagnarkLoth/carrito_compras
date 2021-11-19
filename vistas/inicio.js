@@ -1,7 +1,7 @@
 import{guardarInformacion}from "../controlador/coontrolador.js"
 import{informacionJsonC}from "../controlador/coontrolador.js"
 
-//localStorage.clear()
+localStorage.clear()
 const MAIN = document.querySelector("main")
 
 function crearTarjetas() {
