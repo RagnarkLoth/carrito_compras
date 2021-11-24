@@ -1,7 +1,6 @@
 import{guardarInformacion}from "../controlador/coontrolador.js"
 import{informacionJsonC}from "../controlador/coontrolador.js"
 
-localStorage.clear()
 const MAIN = document.querySelector("main")
 
 function crearTarjetas() {
@@ -17,17 +16,23 @@ function crearTarjetas() {
             IMAGEN.setAttribute('src', juegos.imagen)
             IMAGEN.setAttribute('alt', juegos.alt)
             IMAGEN.setAttribute('class', 'imagen')
+
+            const PRECIO = document.createElement('p')
+            PRECIO.setAttribute('class', 'precio')
+            PRECIO.textContent = `$${juegos.precio}`
             
-            const boton = document.createElement('button')
-            boton.setAttribute('class', 'btnAñadir')
-            boton.textContent = 'AÑADIR'
-            boton.addEventListener('click',()=>{
-                guardarInformacion(juegos.imagen, juegos.nombre, juegos.alt)
+            const BOTON = document.createElement('button')
+            BOTON.setAttribute('class', 'btnAñadir')
+            BOTON.textContent = 'AÑADIR'
+            BOTON.addEventListener('click',()=>{
+                guardarInformacion(juegos.imagen, juegos.nombre, juegos.alt, Number(juegos.precio))
+     
             })
             
             TARJETA.appendChild(TITULO_TARJETA)
             TARJETA.appendChild(IMAGEN)
-            TARJETA.appendChild(boton)
+            TARJETA.appendChild(PRECIO)
+            TARJETA.appendChild(BOTON)
             MAIN.appendChild(TARJETA)
         })
     })

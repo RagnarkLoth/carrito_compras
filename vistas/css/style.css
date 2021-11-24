@@ -60,7 +60,7 @@ main{
     background: #1B1717;
     color: white;
     width: 15em;
-    height: 18em;
+    height: 21em;
     margin: 2em;
     display: flex;
     flex-direction:column;
@@ -82,18 +82,54 @@ footer{
     grid-column: 1/span 2;
 }
 
-.btnAñadir{
+.btnEliminar{
     background: #670000;
-    width: 10em;
+    width: 7em;
     height: 2em;
     border: 1px solid #171A21;
     border-radius:5px;
     color: white;
-    margin-top: 5px;
     box-shadow:  5px 5px #171A21;
 }
 
 footer{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 1em;
+}
+
+.precio{
+    font-size: 1em;
+}
+
+.btnComprar{
+    background: green;
+    width: 7em;
+    height: 2em;
+    border: 1px solid #171A21;
+    border-radius:5px;
+    color: white;
+    box-shadow:  5px 5px #171A21;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 13.2rem;
+}
+
+.btnAñadir{
+    background: green;
+    width: 10em;
+    height: 2em;
+    border: 1px solid #171A21;
+    border-radius:5px;
+    color: white;
+    box-shadow:  5px 5px #171A21;
 }

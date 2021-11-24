@@ -3,24 +3,28 @@
         "id":"0",
         "nombre": "God of War I",
         "imagen": "https://media.vandal.net/m/3268/200562215934_1.jpg",
-        "alt": "God of War I"
+        "alt": "God of War I",
+        "precio": "200000"
     },
     {
         "id":"1",
         "nombre": "God of War II",
         "imagen": "https://m.media-amazon.com/images/I/51-TFvrGFHL._SY445_.jpg",
-        "alt": "God of War II"
+        "alt": "God of War II",
+        "precio": "300000"
     },
     {
         "id":"2",
         "nombre": "God of War III",
         "imagen": "https://m.media-amazon.com/images/I/61r0Xu9NoSL.jpg",
-        "alt": "God of War III"
+        "alt": "God of War III",
+        "precio": "150000"
     },
     {
         "id":"3",
         "nombre": "Call Of Duty",
         "imagen": "https://sm.ign.com/ign_es/cover/c/call-of-du/call-of-duty-modern-warfare_xe5e.jpg",
-        "alt": "Call of Duty"
+        "alt": "Call of Duty",
+        "precio": "100000"
     }
 ]
