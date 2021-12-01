@@ -67,7 +67,7 @@ export function eliminarTarjeta(index, precio, tipoBoton){
             showCancelButton: true,
             cancelButtonColor: '#670000',
             cancelButtonText: 'CANCELAR',
-            title: '¿Seguro que quiere eliminar la tarjeta?'
+            title: '¿Seguro que quiere eliminar este videojuego del carrito?'
         }).then((result) =>{
             if (result.isConfirmed) {
                 eliminar(index, precio)
